@@ -1,0 +1,107 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: black;
+}
+
+body {
+    background-image: url('background.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0; /* Elimina el margen predeterminado del body */
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+}
+
+#app {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color : black;
+}
+
+button {
+    background-color: transparent;
+    border: 2px;
+    border-radius: 4px;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-button img {
+    width: 100px;
+    height: 100px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.image-grid img {
+    width: 250px;
+    height: 250px;
+}
+
+#clock {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: beige;
+    font-weight: bolder;
+}
+
+.back-button {
+    margin-top: 20px;
+    background-color: silver;
+}
+continue-button {
+    margin-top: 20px;
+    background-color: silver;
+}
